@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Joseph Silas Ukandu</title>
+    <meta name="description" content="WDD 131 Course Home Page for Joseph Silas Ukandu.">
+    <meta name="author" content="Joseph Silas Ukandu">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - JOSEPH SILAS UKANDU</h1>
+    <header>
+        <span class="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byu.instructure.com" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener">Favorite Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Joseph Silas Ukandu</h1>
+
+        <!-- Left Box: About Me & Location -->
+        <section class="card about-card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <p>Hello! My name is Joseph Silas Ukandu. I am currently studying web development, software programming, and technical systems. I enjoy solving technical problems, building responsive web interfaces, and expanding my computing skills through coursework.</p>
+                <img src="images/profile.jpg" alt="Profile photo of Joseph Silas Ukandu" width="200" height="250">
+            </div>
+
+            <hr>
+
+            <h3>Calabar, Nigeria</h3>
+            <div class="card-content">
+                <figure class="flag-box">
+                    <img src="images/flag-of-nigeria.jpg" alt="Flag of Nigeria" width="150" height="100">
+                    <figcaption>Flag of Nigeria</figcaption>
+                </figure>
+                <p>Calabar is the capital city of Cross River State, located in coastal southeastern Nigeria. Known for its rich cultural history, clean environment, and hospitality, it serves as a major hub for commerce, education, and tourism in the region.</p>
+            </div>
+        </section>
+
+        <!-- Right Box: Web Dev Resources -->
+        <section class="card resources-card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com" target="_blank" rel="noopener">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com" target="_blank" rel="noopener">CSS-Tricks</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></li>
+                <li><a href="https://www.udemy.com" target="_blank" rel="noopener">Udemy</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Joseph Silas Ukandu | Calabar, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
