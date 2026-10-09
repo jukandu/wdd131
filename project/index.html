@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 Final Project - Service Portal">
+    <meta name="author" content="Joseph Silas Ukandu">
+    <title>Home - WDD 131 Final Project</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Web & Cooling Services Portal</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="siteplan.html">Site Plan</a>
+            <a href="site-map.html">Site Map</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="Service Banner" width="500" loading="lazy">
+            </picture>
+        </section>
+
+        <section class="card">
+            <h2>Featured Offerings</h2>
+            <div id="services-container"></div>
+        </section>
+
+        <section class="card">
+            <h2>Service Booking Form</h2>
+            <form id="serviceForm">
+                <label for="userName">Full Name:</label>
+                <input type="text" id="userName" name="userName" required>
+
+                <label for="serviceSelect">Select Service:</label>
+                <select id="serviceSelect" name="serviceSelect" required>
+                    <option value="">-- Choose a Service --</option>
+                    <option value="Solar Installation">Solar Installation</option>
+                    <option value="AC Maintenance">AC Maintenance</option>
+                    <option value="Web Development">Web Development</option>
+                </select>
+
+                <button type="submit">Book Service</button>
+            </form>
+            <p id="formFeedback"></p>
+            <p>Total Bookings Saved: <span id="bookingCount">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Joseph Silas Ukandu | Nigeria</p>
+        <p id="lastModified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>
